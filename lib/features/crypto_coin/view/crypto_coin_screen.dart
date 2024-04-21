@@ -11,17 +11,16 @@ import 'package:get_it/get_it.dart';
 class CryptoCoinScreen extends StatefulWidget {
   const CryptoCoinScreen({
     super.key,
-    this.coin,
+    required this.coin,
   });
 
-  final CryptoCoin? coin;
+  final CryptoCoin coin;
 
   @override
   State<CryptoCoinScreen> createState() => _CryptoCoinScreenState();
 }
 
 class _CryptoCoinScreenState extends State<CryptoCoinScreen> {
-  // CryptoCoin? coin;
 
   final _coinDetailsBloc = CryptoCoinDetailsBloc(
     GetIt.I<AbstractCoinsRepository>(),
@@ -30,7 +29,7 @@ class _CryptoCoinScreenState extends State<CryptoCoinScreen> {
   @override
   void initState() {
     _coinDetailsBloc
-        .add(LoadCryptoCoinDetails(currencyCode: widget.coin!.name));
+        .add(LoadCryptoCoinDetails(currencyCode: widget.coin.name));
     super.initState();
   }
 

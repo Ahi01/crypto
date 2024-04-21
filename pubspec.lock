@@ -61,10 +61,10 @@ packages:
     dependency: "direct main"
     description:
       name: auto_route
-      sha256: f04022b2a5c4d255f7feb139a75cb3d100ccd2f8918a75036fe09456309a13a3
+      sha256: "3cc59d11a477506c593237572ecff94338dc83d9ce1b0bbb4953eae9e5a4f13f"
       url: "https://pub.flutter-io.cn"
     source: hosted
-    version: "8.0.3"
+    version: "8.1.0"
   auto_route_generator:
     dependency: "direct dev"
     description:
